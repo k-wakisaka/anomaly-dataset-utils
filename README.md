@@ -3,7 +3,7 @@
 ## Task flow
 1. manipulate for function
 2. clean floor
-3. shoot
+3. shoot & (if detail) annotate
 4. [upload](https://drive.google.com/drive/folders/1S6LWKWM84hgxveAl0s9vu40XjiaGp-Vv?usp=drive_link)
 5. heic2png.py
 6. annotate center point by /usr/local/bin/[labelme-Linux](https://github.com/wkentaro/labelme/releases/download/v5.2.1/labelme-Linux)
@@ -18,7 +18,7 @@
 |----------|-------------------|------|----|-----|-----|-----------|----------|----------|
 |bottle    |good               |30    |3   |1x1  |max  |768        |768       | x        |
 |bottle    |broken_large       |10    |3   |1x1  |max  |768        |768       | x        |
-|bottle    |broken_small       |10    |3   |1x1  |max  |768        |768       |          |
+|bottle    |broken_small       |10    |3   |1x1  |max  |768        |768       | x        |
 |bottle    |contamination      |10    |3   |1x1  |max  |768        |768       |          |
 |carpet    |good               |30    |    |     |     |           |          |          |
 |carpet    |color              |10    |    |     |     |           |          |          |
