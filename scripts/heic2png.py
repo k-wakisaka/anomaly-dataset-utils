@@ -28,8 +28,8 @@ def main(input_dir_path, output_dir_path):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='main')
-    parser.add_argument('--input_dir_path', type=str, default='~/Desktop/good')
-    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/good_png')
+    parser.add_argument('--input_dir_path', type=str, default='~/Desktop/org_heic')
+    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/org_png')
 
     args = parser.parse_args()
 

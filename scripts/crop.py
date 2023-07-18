@@ -29,10 +29,10 @@ def main(input_dir_path, height, width, output_dir_path):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='main')
-    parser.add_argument('--input_dir_path', type=str, default='~/Desktop/good_png')
+    parser.add_argument('--input_dir_path', type=str, default='~/Desktop/org_png')
     parser.add_argument('--height', type=int, default=768)
     parser.add_argument('--width', type=int, default=768)
-    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/good_png_crop')
+    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/crop_png')
 
     args = parser.parse_args()
 
