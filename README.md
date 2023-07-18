@@ -19,7 +19,7 @@
 |bottle    |good               |30    |3   |1x1  |max  |768        |768       | x        |
 |bottle    |broken_large       |10    |3   |1x1  |max  |768        |768       | x        |
 |bottle    |broken_small       |10    |3   |1x1  |max  |768        |768       | x        |
-|bottle    |contamination      |10    |3   |1x1  |max  |768        |768       |          |
+|bottle    |contamination      |10    |3   |1x1  |max  |768        |768       | x        |
 |carpet    |good               |30    |    |     |     |           |          |          |
 |carpet    |color              |10    |    |     |     |           |          |          |
 |carpet    |cut                |10    |    |     |     |           |          |          |
