@@ -20,7 +20,7 @@ def convert_heic2png(heic_path, png_path):
 
 def main(input_dir_path, output_dir_path):
     os.makedirs(output_dir_path, exist_ok=True)
-    heic_path_list = glob.glob(os.path.join(input_dir_path, '**/*.heic'), recursive=True)
+    heic_path_list = glob.glob(os.path.join(input_dir_path, '**/*.HEIC'), recursive=True)
     for heic_path in heic_path_list:
         output_png_path = os.path.join(output_dir_path, f'{os.path.basename(os.path.splitext(heic_path)[0])}.png')
         convert_heic2png(heic_path, output_png_path)
