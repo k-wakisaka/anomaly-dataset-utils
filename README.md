@@ -14,70 +14,70 @@
 
 ## Task sheet
 
-| component  | function            | sample | light | crop_height | crop_width | complete  |
-|------------|---------------------|--------|-------|-------------|------------|-----------|
-| bottle     | good                | 30     |       |             |            |           |
-| bottle     | broken_large        | 10     |       |             |            |           |
-| bottle     | broken_small        | 10     |       |             |            |           |
-| bottle     | contamination       | 10     |       |             |            |           |
-| carpet     | good                | 30     |       |             |            |           |
-| carpet     | color               | 10     |       |             |            |           |
-| carpet     | cut                 | 10     |       |             |            |           |
-| carpet     | hole                | 10     |       |             |            |           |
-| carpet     | metal_contamination | 10     |       |             |            |           |
-| carpet     | thread              | 10     |       |             |            |           |
-| grid       | good                | 30     |       |             |            |           |
-| grid       | bent                | 10     |       |             |            |           |
-| grid       | broken              | 10     |       |             |            |           |
-| grid       | glue                | 10     |       |             |            |           |
-| grid       | metal_contamination | 10     |       |             |            |           |
-| grid       | thread              | 10     |       |             |            |           |
-| leather    | good                | 30     |       |             |            |           |
-| leather    | color               | 10     |       |             |            |           |
-| leather    | cut                 | 10     |       |             |            |           |
-| leather    | fold                | 10     |       |             |            |           |
-| leather    | glue                | 10     |       |             |            |           |
-| leather    | poke                | 10     |       |             |            |           |
-| metal_nat  | good                | 40     | max   | 1024        | 1024       | x         |
-| metal_nat  | bent                | 10     | max   | 1024        | 1024       | x         |
-| metal_nat  | color               | 10     | max   | 1024        | 1024       | x         |
-| metal_nat  | flip                | 10     | max   | 1024        | 1024       | x         |
-| metal_nat  | scratch             | 10     | max   | 1024        | 1024       | x         |
-| screw      | good                | 36     | max   | 1408        | 1408       | x         |
-| screw      | manipulated_front   | 10     | max   | 1408        | 1408       | x         |
-| screw      | scratch_head        | 10     | max   | 1408        | 1408       | x         |
-| screw      | scratch_neck        | 10     | max   | 1408        | 1408       | x         |
-| screw      | thread_side         | 10     | max   | 1408        | 1408       | x         |
-| screw      | thread_top          | 10     | max   | 1408        | 1408       | ~         |
-| tile       | crack               | 10     |       |             |            |           |
-| tile       | glue_strip          | 10     |       |             |            |           |
-| tile       | good                | 30     |       |             |            |           |
-| tile       | gray_stroke         | 10     |       |             |            |           |
-| tile       | oil                 | 10     |       |             |            |           |
-| tile       | rough               | 10     |       |             |            |           |
-| toothbrush | good                | 40     | max   | 832         | 576        | x         |
-| toothbrush | defective           | 40     | max   | 832         | 576        | x         |
-| transistor | good                | 30     |       |             |            |           |
-| transistor | bent_lead           | 10     |       |             |            |           |
-| transistor | cut_lead            | 10     |       |             |            |           |
-| transistor | damaged_case        | 10     |       |             |            |           |
-| transistor | misplaced           | 10     |       |             |            |           |
-| wood       | good                | 30     |       |             |            |           |
-| wood       | color               | 10     |       |             |            |           |
-| wood       | combined            | 10     |       |             |            |           |
-| wood       | hole                | 10     |       |             |            |           |
-| wood       | liquid              | 10     |       |             |            |           |
-| wood       | scratch             | 10     |       |             |            |           |
-| zipper     | good                | 30     |       |             |            |           |
-| zipper     | broken_teeth        | 10     |       |             |            |           |
-| zipper     | combined            | 10     |       |             |            |           |
-| zipper     | fabric_border       | 10     |       |             |            |           |
-| zipper     | fabric_interior     | 10     |       |             |            |           |
-| zipper     | rough               | 10     |       |             |            |           |
-| zipper     | split_teeth         | 10     |       |             |            |           |
-| zipper     | squeezed_teeth      | 10     |       |             |            |           |
-| hazelnut   | good                | 50     | max   | 1540        | 1540       | x         |
-| hazelnut   | crack               | 10     | max   | 1540        | 1540       | x         |
-| hazelnut   | cut                 | 10     | max   | 1540        | 1540       | x         |
-| hazelnut   | hole                | 10     | max   | 1540        | 1540       | x         |
-| hazelnut   | color               | 10     | max   | 1540        | 1540       | x         |
+| component  | function            | sample | light | crop_height | crop_width | complete |
+|------------|---------------------|--------|-------|-------------|------------|----------|
+| bottle     | good                | 30     |       |             |            |          |
+| bottle     | broken_large        | 10     |       |             |            |          |
+| bottle     | broken_small        | 10     |       |             |            |          |
+| bottle     | contamination       | 10     |       |             |            |          |
+| carpet     | good                | 30     |       |             |            |          |
+| carpet     | color               | 10     |       |             |            |          |
+| carpet     | cut                 | 10     |       |             |            |          |
+| carpet     | hole                | 10     |       |             |            |          |
+| carpet     | metal_contamination | 10     |       |             |            |          |
+| carpet     | thread              | 10     |       |             |            |          |
+| grid       | good                | 30     |       |             |            |          |
+| grid       | bent                | 10     |       |             |            |          |
+| grid       | broken              | 10     |       |             |            |          |
+| grid       | glue                | 10     |       |             |            |          |
+| grid       | metal_contamination | 10     |       |             |            |          |
+| grid       | thread              | 10     |       |             |            |          |
+| leather    | good                | 30     |       |             |            |          |
+| leather    | color               | 10     |       |             |            |          |
+| leather    | cut                 | 10     |       |             |            |          |
+| leather    | fold                | 10     |       |             |            |          |
+| leather    | glue                | 10     |       |             |            |          |
+| leather    | poke                | 10     |       |             |            |          |
+| metal_nat  | good                | 40     | max   | 1024        | 1024       | x        |
+| metal_nat  | bent                | 10     | max   | 1024        | 1024       | x        |
+| metal_nat  | color               | 10     | max   | 1024        | 1024       | x        |
+| metal_nat  | flip                | 10     | max   | 1024        | 1024       | x        |
+| metal_nat  | scratch             | 10     | max   | 1024        | 1024       | x        |
+| screw      | good                | 36     | max   | 1408        | 1408       | x        |
+| screw      | manipulated_front   | 10     | max   | 1408        | 1408       | x        |
+| screw      | scratch_head        | 10     | max   | 1408        | 1408       | x        |
+| screw      | scratch_neck        | 10     | max   | 1408        | 1408       | x        |
+| screw      | thread_side         | 10     | max   | 1408        | 1408       | x        |
+| screw      | thread_top          | 10     | max   | 1408        | 1408       | ~        |
+| tile       | crack               | 10     |       |             |            |          |
+| tile       | glue_strip          | 10     |       |             |            |          |
+| tile       | good                | 30     |       |             |            |          |
+| tile       | gray_stroke         | 10     |       |             |            |          |
+| tile       | oil                 | 10     |       |             |            |          |
+| tile       | rough               | 10     |       |             |            |          |
+| toothbrush | good                | 40     | max   | 832         | 576        | x        |
+| toothbrush | defective           | 40     | max   | 832         | 576        | x        |
+| transistor | good                | 30     |       |             |            |          |
+| transistor | bent_lead           | 10     |       |             |            |          |
+| transistor | cut_lead            | 10     |       |             |            |          |
+| transistor | damaged_case        | 10     |       |             |            |          |
+| transistor | misplaced           | 10     |       |             |            |          |
+| wood       | good                | 30     |       |             |            |          |
+| wood       | color               | 10     |       |             |            |          |
+| wood       | combined            | 10     |       |             |            |          |
+| wood       | hole                | 10     |       |             |            |          |
+| wood       | liquid              | 10     |       |             |            |          |
+| wood       | scratch             | 10     |       |             |            |          |
+| zipper     | good                | 30     |       |             |            |          |
+| zipper     | broken_teeth        | 10     |       |             |            |          |
+| zipper     | combined            | 10     |       |             |            | ~　       |
+| zipper     | fabric_border       | 10     |       |             |            | ~　       |
+| zipper     | fabric_interior     | 10     |       |             |            |          |
+| zipper     | rough               | 10     |       |             |            | ~　       |
+| zipper     | split_teeth         | 10     |       |             |            |          |
+| zipper     | squeezed_teeth      | 10     |       |             |            |          |
+| hazelnut   | good                | 50     | max   | 1540        | 1540       | x        |
+| hazelnut   | crack               | 10     | max   | 1540        | 1540       | x        |
+| hazelnut   | cut                 | 10     | max   | 1540        | 1540       | x        |
+| hazelnut   | hole                | 10     | max   | 1540        | 1540       | x        |
+| hazelnut   | color               | 10     | max   | 1540        | 1540       | x        |
