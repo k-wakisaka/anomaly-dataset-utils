@@ -2,6 +2,7 @@ import os
 import argparse
 import glob
 import json
+import tqdm
 from PIL import Image
 import numpy as np
 def convert_crop(png_path, json_path, height, width, png_crop_path):
@@ -21,7 +22,7 @@ def convert_crop(png_path, json_path, height, width, png_crop_path):
 def main(input_dir_path, height, width, output_dir_path):
     os.makedirs(output_dir_path, exist_ok=True)
     png_path_list = glob.glob(os.path.join(input_dir_path, '**/*.png'), recursive=True)
-    for png_path in png_path_list:
+    for png_path in tqdm.tqdm(png_path_list, desc='main'):
         json_path = f'{os.path.splitext(png_path)[0]}.json'
         png_crop_path = os.path.join(output_dir_path, os.path.basename(png_path))
         convert_crop(png_path, json_path, height, width, png_crop_path)

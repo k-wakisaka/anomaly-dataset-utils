@@ -3,6 +3,7 @@ import argparse
 import glob
 from PIL import Image
 import pyheif
+import tqdm
 
 
 def convert_heic2png(heic_path, png_path):
@@ -21,7 +22,7 @@ def convert_heic2png(heic_path, png_path):
 def main(input_dir_path, output_dir_path):
     os.makedirs(output_dir_path, exist_ok=True)
     heic_path_list = glob.glob(os.path.join(input_dir_path, '**/*.heic'), recursive=True)
-    for heic_path in heic_path_list:
+    for heic_path in tqdm.tqdm(heic_path_list, desc='main'):
         output_png_path = os.path.join(output_dir_path, f'{os.path.basename(os.path.splitext(heic_path)[0])}.png')
         convert_heic2png(heic_path, output_png_path)
 

@@ -2,6 +2,7 @@ import os
 import argparse
 import glob
 import json
+import tqdm
 from PIL import Image
 import numpy as np
 from labelme.utils import shape
@@ -23,7 +24,7 @@ def convert_mask(png_path, json_path, mask_path):
 def main(input_dir_path, output_dir_path):
     os.makedirs(output_dir_path, exist_ok=True)
     png_path_list = glob.glob(os.path.join(input_dir_path, '**/*.png'), recursive=True)
-    for png_path in png_path_list:
+    for png_path in tqdm.tqdm(png_path_list, desc='main'):
         json_path = f'{os.path.splitext(png_path)[0]}.json'
         mask_path = os.path.join(output_dir_path, f'{os.path.splitext(os.path.basename(png_path))[0]}_mask.png')
         convert_mask(png_path, json_path, mask_path)
