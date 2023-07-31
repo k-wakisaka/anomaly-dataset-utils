@@ -13,9 +13,24 @@ def convert_crop(png_path, json_path, height, width, png_crop_path):
         json_dict = json.load(f)
         center_x, center_y = int(json_dict['shapes'][0]['points'][0][0]), int(json_dict['shapes'][0]['points'][0][1])
     # crop
-    crop_image_array = image_array[max(0, center_y-height//2):min(image_array.shape[0], center_y+height//2),
-                 max(0, center_x-width//2):min(image_array.shape[1], center_x+width//2),
-                 :]
+    start_y, end_y = max(0, center_y-height//2), min(image_array.shape[0], center_y+height//2)
+    start_x, end_x = max(0, center_x-width//2), min(image_array.shape[1], center_x+width//2)
+
+    crop_height, crop_width = end_y - start_y, end_x - start_x
+    diff_height, diff_width = height - crop_height, width - crop_width
+    if diff_height > 0:
+        if start_y == 0:
+            end_y = end_y + diff_height
+        if end_y == 0:
+            start_y = start_y + diff_height
+    if diff_width > 0:
+        if start_x == 0:
+            end_x = end_x + diff_width
+        if end_x == 0:
+            start_x = start_x + diff_width
+
+    crop_image_array = image_array[start_y:end_y, start_x:end_x, :]
+
     # output
     crop_image = Image.fromarray(crop_image_array)
     crop_image.save(png_crop_path)
