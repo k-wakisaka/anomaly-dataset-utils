@@ -1,14 +1,17 @@
 # anomaly-dataset-utils
 
 ## Task flow
+
 - manipulate for function
 - tighten the screw
 - clean floorcenter shoot & QuickTimePlayer
 - [upload](https://drive.google.com/drive/folders/1S6LWKWM84hgxveAl0s9vu40XjiaGp-Vv?usp=drive_link)
 - heic2png.py
-- annotate center point by /usr/local/bin/[labelme-Linux](https://github.com/wkentaro/labelme/releases/download/v5.2.1/labelme-Linux)
+- annotate center point by
+  /usr/local/bin/[labelme-Linux](https://github.com/wkentaro/labelme/releases/download/v5.2.1/labelme-Linux)
 - crop.py
-- (if anomaly)annotate anomaly polygons  by /usr/local/bin/[labelme-Linux](https://github.com/wkentaro/labelme/releases/download/v5.2.1/labelme-Linux)
+- (if anomaly)annotate anomaly polygons by
+  /usr/local/bin/[labelme-Linux](https://github.com/wkentaro/labelme/releases/download/v5.2.1/labelme-Linux)
 - (if anomaly)mask.py
 - [upload](https://drive.google.com/drive/folders/1WbkNND1urgiNAYOvQKoMQKCPigoG8w_L?usp=drive_link\)
 
@@ -68,16 +71,16 @@
 | wood       | hole                | 10     |       |             |            |          |
 | wood       | liquid              | 10     |       |             |            |          |
 | wood       | scratch             | 10     |       |             |            |          |
-| zipper     | good                | 30     |       |             |            |          |
-| zipper     | broken_teeth        | 10     |       |             |            |          |
-| zipper     | combined            | 10     |       |             |            | ~　       |
-| zipper     | fabric_border       | 10     |       |             |            | ~　       |
-| zipper     | fabric_interior     | 10     |       |             |            |          |
-| zipper     | rough               | 10     |       |             |            | ~　       |
-| zipper     | split_teeth         | 10     |       |             |            |          |
-| zipper     | squeezed_teeth      | 10     |       |             |            |          |
-| hazelnut   | good                | 50     | max   | 1540        | 1540       | x        |
-| hazelnut   | crack               | 10     | max   | 1540        | 1540       | x        |
-| hazelnut   | cut                 | 10     | max   | 1540        | 1540       | x        |
-| hazelnut   | hole                | 10     | max   | 1540        | 1540       | x        |
-| hazelnut   | color               | 10     | max   | 1540        | 1540       | x        |
+| zipper     | good                | 30     | max   | 2048        | 1536       | x        |
+| zipper     | broken_teeth        | 10     | max   | 2048        | 1536       | x        |
+| zipper     | combined            | 10     | max   | 2048        | 1536       | ~　       |
+| zipper     | fabric_border       | 10     | max   | 2048        | 1536       | ~　       |
+| zipper     | fabric_interior     | 10     | max   | 2048        | 1536       | x        |
+| zipper     | rough               | 10     | max   | 2048        | 1536       | ~　       |
+| zipper     | split_teeth         | 10     | max   | 2048        | 1536       | x         |
+| zipper     | squeezed_teeth      | 10     | max   | 2048        | 1536       | ~         |
+| hazelnut   | good                | 50     | max   | 1536        | 1536       | x        |
+| hazelnut   | crack               | 10     | max   | 1536        | 1536       | x        |
+| hazelnut   | cut                 | 10     | max   | 1536        | 1536       | x        |
+| hazelnut   | hole                | 10     | max   | 1536        | 1536       | x        |
+| hazelnut   | color               | 10     | max   | 1536        | 1536       | x        |
