@@ -60,11 +60,11 @@
 | tile       | rough               | 10     |       |             |            |          |
 | toothbrush | good                | 40     | max   | 832         | 576        | x        |
 | toothbrush | defective           | 40     | max   | 832         | 576        | x        |
-| transistor | good                | 30     |       |             |            |          |
-| transistor | bent_lead           | 10     |       |             |            |          |
-| transistor | cut_lead            | 10     |       |             |            |          |
-| transistor | damaged_case        | 10     |       |             |            |          |
-| transistor | misplaced           | 10     |       |             |            |          |
+| transistor | good                | 34     | max   | 1280        | 1280       | x        |
+| transistor | bent_lead           | 10     | max   | 1280        | 1280       | x        |
+| transistor | cut_lead            | 10     | max   | 1280        | 1280       | x        |
+| transistor | damaged_case        | 10     | max   | 1280        | 1280       | x        |
+| transistor | misplaced           | 10     | max   | 1280        | 1280       | ~        |
 | wood       | good                | 30     |       |             |            |          |
 | wood       | color               | 10     |       |             |            |          |
 | wood       | combined            | 10     |       |             |            |          |
@@ -77,8 +77,8 @@
 | zipper     | fabric_border       | 10     | max   | 2048        | 1536       | ~　       |
 | zipper     | fabric_interior     | 10     | max   | 2048        | 1536       | x        |
 | zipper     | rough               | 10     | max   | 2048        | 1536       | ~　       |
-| zipper     | split_teeth         | 10     | max   | 2048        | 1536       | x         |
-| zipper     | squeezed_teeth      | 10     | max   | 2048        | 1536       | ~         |
+| zipper     | split_teeth         | 10     | max   | 2048        | 1536       | x        |
+| zipper     | squeezed_teeth      | 10     | max   | 2048        | 1536       | ~        |
 | hazelnut   | good                | 50     | max   | 1536        | 1536       | x        |
 | hazelnut   | crack               | 10     | max   | 1536        | 1536       | x        |
 | hazelnut   | cut                 | 10     | max   | 1536        | 1536       | x        |
