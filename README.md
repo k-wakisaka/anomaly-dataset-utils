@@ -23,7 +23,7 @@
 | bottle     | broken_large        | 10     |       |            |            |          |
 | bottle     | broken_small        | 10     |       |            |            |          |
 | bottle     | contamination       | 10     |       |            |            |          |
-| carpet     | good                | 30     |       | 2048       | 2048　      | x        |
+| carpet     | good                | 36     |       | 2048       | 2048　      | x        |
 | carpet     | color               | 10     |       | 2048       | 2048       |          |
 | carpet     | cut                 | 10     |       | 2048       | 2048       |          |
 | carpet     | hole                | 10     |       | 2048    　  | 2048       |          |
