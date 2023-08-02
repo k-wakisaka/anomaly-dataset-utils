@@ -24,11 +24,11 @@
 | bottle     | broken_small        | 10     |       |            |            |          |
 | bottle     | contamination       | 10     |       |            |            |          |
 | carpet     | good                | 36     |       | 2048       | 2048　      | x        |
-| carpet     | color               | 10     |       | 2048       | 2048       |          |
-| carpet     | cut                 | 10     |       | 2048       | 2048       |          |
-| carpet     | hole                | 10     |       | 2048    　  | 2048       |          |
-| carpet     | metal_contamination | 10     |       | 2048       | 2048　      |          |
-| carpet     | thread              | 10     |       | 2048       | 2048       |          |
+| carpet     | color               | 10     |       | 2048       | 2048       | x        |
+| carpet     | cut                 | 10     |       | 2048       | 2048       | x        |
+| carpet     | hole                | 10     |       | 2048    　  | 2048       | x        |
+| carpet     | metal_contamination | 10     |       | 2048       | 2048　      | ~        |
+| carpet     | thread              | 10     |       | 2048       | 2048       | x        |
 | grid       | good                | 30     |       |            |            |          |
 | grid       | bent                | 10     |       |            |            |          |
 | grid       | broken              | 10     |       |            |            |          |
