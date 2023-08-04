@@ -65,12 +65,12 @@
 | transistor | cut_lead            | 10     | max   | 1280        | 1280       | x        |
 | transistor | damaged_case        | 10     | max   | 1280        | 1280       | x        |
 | transistor | misplaced           | 10     | max   | 1280        | 1280       | ~        |
-| wood       | good                | 30     |       |             |            |          |
-| wood       | color               | 10     |       |             |            |          |
-| wood       | combined            | 10     |       |             |            |          |
-| wood       | hole                | 10     |       |             |            |          |
-| wood       | liquid              | 10     |       |             |            |          |
-| wood       | scratch             | 10     |       |             |            |          |
+| wood       | good                | 30     | max   | 1024        | 1024       | x        |
+| wood       | color               | 10     | max   | 1024        | 1024       |          |
+| wood       | combined            | 10     | max   | 1024        | 1024       |          |
+| wood       | hole                | 10     | max   | 1024        | 1024       |          |
+| wood       | liquid              | 10     | max   | 1024        | 1024       |          |
+| wood       | scratch             | 10     | max   | 1024        | 1024       |          |
 | zipper     | good                | 30     | max   | 2048        | 1536       | x        |
 | zipper     | broken_teeth        | 10     | max   | 2048        | 1536       | x        |
 | zipper     | combined            | 10     | max   | 2048        | 1536       | ~　       |
