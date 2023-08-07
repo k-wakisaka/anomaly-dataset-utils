@@ -67,10 +67,10 @@
 | transistor | misplaced           | 10     | max   | 1280        | 1280       | ~        |
 | wood       | good                | 30     | max   | 1280        | 1280       | x        |
 | wood       | color               | 10     | max   | 1280        | 1280       | x        |
-| wood       | combined            | 10     | max   | 1280        | 1280       |          |
-| wood       | hole                | 10     | max   | 1280        | 1280       |          |
-| wood       | liquid              | 10     | max   | 1280        | 1280       |          |
-| wood       | scratch             | 10     | max   | 1280        | 1280       |          |
+| wood       | combined            | 10     | max   | 1280        | 1280       | ~        |
+| wood       | hole                | 10     | max   | 1280        | 1280       | x        |
+| wood       | liquid              | 10     | max   | 1280        | 1280       | x        |
+| wood       | scratch             | 10     | max   | 1280        | 1280       | x        |
 | zipper     | good                | 30     | max   | 2048        | 1536       | x        |
 | zipper     | broken_teeth        | 10     | max   | 2048        | 1536       | x        |
 | zipper     | combined            | 10     | max   | 2048        | 1536       | ~　       |
