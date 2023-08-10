@@ -2,6 +2,7 @@
 
 ## Task flow
 
+### Prepare sub dataset
 - manipulate for function
 - tighten the screw
 - clean floorcenter shoot & QuickTimePlayer
@@ -14,6 +15,9 @@
   /usr/local/bin/[labelme-Linux](https://github.com/wkentaro/labelme/releases/download/v5.2.1/labelme-Linux)
 - (if anomaly)mask.py
 - [upload](https://drive.google.com/drive/folders/1WbkNND1urgiNAYOvQKoMQKCPigoG8w_L?usp=drive_link\)
+
+### Split
+- split.py
 
 ## Task sheet
 
