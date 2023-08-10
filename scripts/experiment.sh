@@ -3,8 +3,9 @@
 echo "./experiment.sh {dataset_path} {output_dir_path} {input_image_height} {input_image_width} {preprocessing_dim} {aggregate_dims} {percentage} {number_of_starting_points} {dimension_to_project_features_to}"
 
 # cd
-repo_dir_path="${HOME}/GitHub/patchcore-demo/"
-cd ${repo_dir_path}
+this_repo_dir_path=$(pwd)
+patchcore_repo_dir_path="${HOME}/GitHub/patchcore-demo/"
+cd ${patchcore_repo_dir_path}
 
 # build image
 docker build -t vaik-patchcore-demo-image -f ./cpu.Dockerfile .
@@ -68,3 +69,6 @@ for category_path in "${category_path_list[@]}"; do
                --inference_output_dir_path /tmp/output/${category}/dataset_inf \
                --mask_image_dir_path /tmp/dataset/${category}/ground_truth > $2/${category}_experiment.log
 done
+
+cd ${this_repo_dir_path}
+python parse_log.py $2 $2/log.csv
