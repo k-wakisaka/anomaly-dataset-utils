@@ -60,7 +60,7 @@ def dump(score_df, detail_heatmap_dict, input_dataset_dir_path, output_dir_path)
 
         name, ext = os.path.splitext(os.path.basename(data["image_path"]))
         if label == 'good':
-            Image.fromarray(np.zeros((image.size[1], image.size[0], 3), dtype=np.uint8)).save(os.path.join(output_dir_path, f'{score:04d}_{label}_{name}_mask{ext}'))
+            Image.fromarray(np.zeros((image.size[1], image.size[0], 3), dtype=np.uint8)).save(os.path.join(output_dir_path, f'{score:08d}_{label}_{name}_mask{ext}'))
         else:
             mask_image_path = glob.glob(os.path.join(input_dataset_dir_path, f'**/{name}_mask{ext}'), recursive=True)[0]
             shutil.copy2(mask_image_path, os.path.join(output_dir_path, f'{score:08d}_{label}_{os.path.basename(mask_image_path)}'))
