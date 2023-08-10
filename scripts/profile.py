@@ -81,8 +81,6 @@ def profile(log_path, input_dataset_dir_path, output_dir_path, delimiter='---'):
 
     sub_output_dir_path = os.path.join(output_dir_path, category, 'max_score')
     dump(detail_by_max_score_df, detail_heatmap_dict, input_dataset_dir_path, sub_output_dir_path)
-
-    return print()
 def main(input_log_dir_path, input_dataset_dir_path, output_dir_path):
     log_path_list = sorted(glob.glob(os.path.join(input_log_dir_path, '*.log')))
     for log_path in log_path_list:
