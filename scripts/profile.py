@@ -55,7 +55,7 @@ def dump(score_df, detail_heatmap_dict, input_dataset_dir_path, output_dir_path)
         score = int(data['score'] * 10000)
         label = data['label']
         image_path = glob.glob(os.path.join(input_dataset_dir_path, f'**/{os.path.basename(data["image_path"])}'), recursive=True)[0]
-        shutil.copy2(image_path, os.path.join(output_dir_path, f'{score:04d}_{label}_raw_{os.path.basename(data["image_path"])}'))
+        shutil.copy2(image_path, os.path.join(output_dir_path, f'{score:08d}_{label}_raw_{os.path.basename(data["image_path"])}'))
         image = Image.open(image_path).convert('RGBA')
 
         name, ext = os.path.splitext(os.path.basename(data["image_path"]))
@@ -63,7 +63,7 @@ def dump(score_df, detail_heatmap_dict, input_dataset_dir_path, output_dir_path)
             Image.fromarray(np.zeros((image.size[1], image.size[0], 3), dtype=np.uint8)).save(os.path.join(output_dir_path, f'{score:04d}_{label}_{name}_mask{ext}'))
         else:
             mask_image_path = glob.glob(os.path.join(input_dataset_dir_path, f'**/{name}_mask{ext}'), recursive=True)[0]
-            shutil.copy2(mask_image_path, os.path.join(output_dir_path, f'{score:04d}_{label}_{os.path.basename(mask_image_path)}'))
+            shutil.copy2(mask_image_path, os.path.join(output_dir_path, f'{score:08d}_{label}_{os.path.basename(mask_image_path)}'))
 
         heatmap_image = detail_heatmap_dict[data["image_path"]].resize(image.size)
         blended_image = Image.blend(image, heatmap_image, alpha=0.5)
