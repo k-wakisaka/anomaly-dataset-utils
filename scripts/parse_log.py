@@ -35,7 +35,7 @@ def main(input_dir_path, output_csv_path):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='main')
     parser.add_argument('--input_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.1_experiment_log')
-    parser.add_argument('--output_csv_path', type=str, default='/home/kentaro/Desktop/anomaly.v.0.0.1_experiment_log/log.csv')
+    parser.add_argument('--output_csv_path', type=str, default='~/Desktop/anomaly.v.0.0.1_experiment_log/log.csv')
 
     args = parser.parse_args()
 
