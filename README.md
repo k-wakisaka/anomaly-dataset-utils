@@ -1,8 +1,12 @@
 # anomaly-dataset-utils
 
-## Task flow
+--------
 
-### Prepare sub dataset
+## Prepare datste
+
+### Task flow
+
+#### Prepare sub dataset
 - manipulate for function
 - tighten the screw
 - clean floorcenter shoot & QuickTimePlayer
@@ -16,10 +20,10 @@
 - (if anomaly)mask.py
 - [upload](https://drive.google.com/drive/folders/1WbkNND1urgiNAYOvQKoMQKCPigoG8w_L?usp=drive_link\)
 
-### Split
+#### Split
 - split.py
 
-## Task sheet
+#### Task sheet
 
 | component  | function            | sample | light   | crop_height | crop_width | complete |
 |------------|---------------------|--------|---------|-------------|------------|----------|
@@ -88,3 +92,14 @@
 | hazelnut   | cut                 | 10     | max     | 1536        | 1536       | x        |
 | hazelnut   | hole                | 10     | max     | 1536        | 1536       | x        |
 | hazelnut   | color               | 10     | max     | 1536        | 1536       | x        |
+
+---------------
+
+## Experiment
+- clone [patchcore-demo](https://github.com/k-wakisaka/patchcore-demo)
+- run experiment.sh
+
+```shell
+# ./experiment.sh {dataset_path} {output_dir_path} {input_image_height} {input_image_width} {preprocessing_dim} {aggregate_dims} {percentage} {number_of_starting_points} {dimension_to_project_features_to}
+./expriment.sh ${HOME}/Desktop/anomaly.v.0.0.1 ${HOME}/Desktop/anomaly.v.0.0.1_experiment_log 256 256 1024 1024 0.25 10 128
+```

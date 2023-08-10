@@ -18,7 +18,7 @@ def split(input_sub_dataset_path, output_dir_path, good_test_sample=20):
     [shutil.copy2(train_good_image_path, os.path.join(output_good_train_dir_path, os.path.basename(train_good_image_path))) for train_good_image_path in train_good_image_path_list]
     output_good_test_dir_path = os.path.join(output_dir_path, 'test', 'good')
     os.makedirs(output_good_test_dir_path, exist_ok=True)
-    [shutil.copy2(test_good_image_path, os.path.join(output_good_train_dir_path, os.path.basename(test_good_image_path))) for test_good_image_path in test_good_image_path_list]
+    [shutil.copy2(test_good_image_path, os.path.join(output_good_test_dir_path, os.path.basename(test_good_image_path))) for test_good_image_path in test_good_image_path_list]
 
     # anomaly
     for anomaly_sub_dataset_category_path in anomaly_sub_dataset_category_path_list:
@@ -43,7 +43,7 @@ def main(input_dir_path, output_dir_path):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='main')
     parser.add_argument('--input_dir_path', type=str, default='~/Desktop/dataset')
-    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/dataset_split')
+    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.1')
 
     args = parser.parse_args()
 
