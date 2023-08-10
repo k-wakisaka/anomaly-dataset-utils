@@ -54,7 +54,7 @@ for category_path in "${category_path_list[@]}"; do
                --output_dir_path /tmp/output/${category}/dataset_inf
 
     # experiment
-    mkdir -p $2/${category}
+    mkdir -p $2
     docker run --name vaik-patchcore-demo-container \
                --rm \
                --gpus all \
