@@ -71,4 +71,4 @@ for category_path in "${category_path_list[@]}"; do
 done
 
 cd ${this_repo_dir_path}
-python parse_log.py $2 $2/log.csv
+python parse_log.py --input_dir_path $2 --output_csv_path $2/log.csv
