@@ -4,7 +4,7 @@ import glob
 import tqdm
 import shutil
 import random
-def split(input_sub_dataset_path, output_dir_path, good_test_sample=20):
+def split(input_sub_dataset_path, output_dir_path, good_test_sample=10):
     random.seed(777)
     good_sub_dataset_category_path = os.path.join(input_sub_dataset_path, 'good')
     anomaly_sub_dataset_category_path_list = [dir_path for dir_path in glob.glob(os.path.join(input_sub_dataset_path, '*')) if dir_path != good_sub_dataset_category_path]
@@ -43,7 +43,7 @@ def main(input_dir_path, output_dir_path):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='main')
     parser.add_argument('--input_dir_path', type=str, default='~/Desktop/dataset')
-    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.1')
+    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.3')
 
     args = parser.parse_args()
 

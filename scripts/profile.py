@@ -88,9 +88,9 @@ def main(input_log_dir_path, input_dataset_dir_path, output_dir_path):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='main')
-    parser.add_argument('--input_log_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.2_experiment_log')
-    parser.add_argument('--input_dataset_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.2')
-    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.2_experiment_profile')
+    parser.add_argument('--input_log_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.3_experiment_log')
+    parser.add_argument('--input_dataset_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.3')
+    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.3_experiment_profile')
 
     args = parser.parse_args()
 

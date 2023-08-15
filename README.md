@@ -101,7 +101,8 @@
 
 ```shell
 # ./experiment.sh {dataset_path} {output_dir_path} {input_image_height} {input_image_width} {preprocessing_dim} {aggregate_dims} {percentage} {number_of_starting_points} {dimension_to_project_features_to}
-./experiment.sh ${HOME}/Desktop/anomaly.v.0.0.2 ${HOME}/Desktop/anomaly.v.0.0.2_experiment_log 288 288 1024 1024 0.2 10 128
+cd scripts
+./experiment.sh ${HOME}/Desktop/anomaly.v.0.0.3 ${HOME}/Desktop/anomaly.v.0.0.3_experiment_log 288 288 1024 1024 0.2 10 128
 ```
 
 - run profile.py
