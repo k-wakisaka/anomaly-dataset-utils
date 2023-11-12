@@ -26,63 +26,63 @@
 #### Task sheet
 
 | component | function  | sample | light | crop_height | crop_width | complete |
-|-----------|-----------|-------|-------|-------------|------------|----------|
-| kabayaki1 | good      | 50    | max   | 3072        | 1536       | x        |
-| kabayaki1 | cut       | 10    | max   | 3072        | 1536       | x        |
-| kabayaki1 | hole      | 10    | max   | 3072        | 1536       | x        |
-| kabayaki1 | glue      | 10    | max   | 3072        | 1536       | x        |
-| kabayaki1 | color     | 10    | max   | 3072        | 1536       | x        |
-| kabayaki2 | good      | 50    | max   | 3072        | 1536       | x        |
-| kabayaki2 | cut       | 10    | max   | 3072        | 1536       | x        |
-| kabayaki2 | hole      | 10    | max   | 3072        | 1536       | x        |
-| kabayaki2 | glue      | 10    | max   | 3072        | 1536       | x        |
-| kabayaki2 | color     | 10    | max   | 3072        | 1536       | x        |
-| karpas1   | good      | 50    | max   | 1024        | 2816       | x        | 9
-| karpas1   | cut       | 10    | max   | 1024        | 2816       | x        |
-| karpas1   | hole      | 10    | max   | 1024        | 2816       | x        |
-| karpas1   | thread    | 10    | max   | 1024        | 2816       | x        |
-| karpas1   | color     | 10    | max   | 1024        | 2816       | x        |
-| karpas2   | good      | 50    | max   | 1024        | 2816       | x        | 10
-| karpas2   | cut       | 10    | max   | 1024        | 2816       | x        |
-| karpas2   | hole      | 10    | max   | 1024        | 2816       | x        |
-| karpas2   | thread    | 10    | max   | 1024        | 2816       | x        |
-| karpas2   | color     | 10    | max   | 1024        | 2816       | x        |
-| umai1     | good      | 50    | max   | 2560        | 2560       |          |
-| umai1     | cut       | 10    | max   | 2560        | 2560       |          |
-| umai1     | hole      | 10    | max   | 2560        | 2560       |          |
-| umai1     | glue      | 10    | max   | 2560        | 2560       |          |
-| umai1     | different | 10    | max   | 2560        | 2560       |          |
-| umai1     | color     | 10    | max   | 2560        | 2560       |          |
-| umai2     | good      | 50    | max   | 2560        | 2560       |          |
-| umai2     | cut       | 10    | max   | 2560        | 2560       |          |
-| umai2     | hole      | 10    | max   | 2560        | 2560       |          |
-| umai2     | glue      | 10    | max   | 2560        | 2560       |          |
-| umai2     | different | 10    | max   | 2560        | 2560       |          |
-| umai2     | color     | 10    | max   | 2560        | 2560       |          |
-| felix1    | good      | 50    | max   | 2560        | 2560       |          |
-| felix1    | cut       | 10    | max   | 2560        | 2560       |          |
-| felix1    | hole      | 10    | max   | 2560        | 2560       |          |
-| felix1    | glue      | 10    | max   | 2560        | 2560       |          |
-| felix1    | oil       | 10    | max   | 2560        | 2560       |          |
-| felix1    | color     | 10    | max   | 2560        | 2560       |          |
-| felix2    | good      | 50    | max   | 2560        | 2560       |          |
-| felix2    | cut       | 10    | max   | 2560        | 2560       |          |
-| felix2    | hole      | 10    | max   | 2560        | 2560       |          |
-| felix2    | glue      | 10    | max   | 2560        | 2560       |          |
-| felix2    | oil       | 10    | max   | 2560        | 2560       |          |
-| felix2    | color     | 10    | max   | 2560        | 2560       |          |
-| gum       | good      | 50    | max   | 2560        | 2560       |          |
-| gum       | cut       | 10    | max   | 2560        | 2560       |          |
-| gum       | hole      | 10    | max   | 2560        | 2560       |          |
-| gum       | clack     | 10    | max   | 2560        | 2560       |          |
-| gum       | thread    | 10    | max   | 2560        | 2560       |          |
-| gum       | liquid    | 10    | max   | 2560        | 2560       |          |
-| caramel   | good      | 50    | max   | 2560        | 2560       |          |
-| caramel   | cut       | 10    | max   | 2560        | 2560       |          |
-| caramel   | hole      | 10    | max   | 2560        | 2560       |          |
-| caramel   | bent      | 10    | max   | 2560        | 2560       |          |
-| caramel   | thread    | 10    | max   | 2560        | 2560       |          |
-| caramel   | liquid    | 10    | max   | 2560        | 2560       |          |
+|-----------|-----------|-------|-------|-------------|-----------|----------|
+| kabayaki1 | good      | 50    | max   | 3072        | 1536      | x        |
+| kabayaki1 | cut       | 10    | max   | 3072        | 1536      | x        |
+| kabayaki1 | hole      | 10    | max   | 3072        | 1536      | x        |
+| kabayaki1 | glue      | 10    | max   | 3072        | 1536      | x        |
+| kabayaki1 | color     | 10    | max   | 3072        | 1536      | x        |
+| kabayaki2 | good      | 50    | max   | 3072        | 1536      | x        |
+| kabayaki2 | cut       | 10    | max   | 3072        | 1536      | x        |
+| kabayaki2 | hole      | 10    | max   | 3072        | 1536      | x        |
+| kabayaki2 | glue      | 10    | max   | 3072        | 1536      | x        |
+| kabayaki2 | color     | 10    | max   | 3072        | 1536      | x        |
+| karpas1   | good      | 50    | max   | 1024        | 2816      | x        | 
+| karpas1   | cut       | 10    | max   | 1024        | 2816      | x        |
+| karpas1   | hole      | 10    | max   | 1024        | 2816      | x        |
+| karpas1   | protrude  | 10    | max   | 1024        | 2816      | x        |
+| karpas1   | color     | 10    | max   | 1024        | 2816      | x        |
+| karpas2   | good      | 50    | max   | 1024        | 2816      | x        | 
+| karpas2   | cut       | 10    | max   | 1024        | 2816      | x        |
+| karpas2   | hole      | 10    | max   | 1024        | 2816      | x        |
+| karpas2   | protrude  | 10    | max   | 1024        | 2816      | x        |
+| karpas2   | color     | 10    | max   | 1024        | 2816      | x        |
+| felix1    | good      | 50    | max   | 1536        | 2304      | x        |4
+| felix1    | cut       | 10    | max   | 1536        | 2304      |          |
+| felix1    | hole      | 10    | max   | 1536        | 2304      |          |
+| felix1    | protrude  | 10    | max   | 1536        | 2304      |          |
+| felix1    | oil       | 10    | max   | 1536        | 2304      |          |
+| felix1    | color     | 10    | max   | 1536        | 2304      |          |
+| felix2    | good      | 50    | max   | 1536        | 2304      | x        |4
+| felix2    | cut       | 10    | max   | 1536        | 2304      |          |
+| felix2    | hole      | 10    | max   | 1536        | 2304      |          |
+| felix2    | protrude  | 10    | max   | 1536        | 2304      |          |
+| felix2    | oil       | 10    | max   | 1536        | 2304      |          |
+| felix2    | color     | 10    | max   | 1536        | 2304      |          |
+| umai1     | good      | 50    | max   | 2560        | 2560      |          |
+| umai1     | cut       | 10    | max   | 2560        | 2560      |          |
+| umai1     | hole      | 10    | max   | 2560        | 2560      |          |
+| umai1     | glue      | 10    | max   | 2560        | 2560      |          |
+| umai1     | different | 10    | max   | 2560        | 2560      |          |
+| umai1     | color     | 10    | max   | 2560        | 2560      |          |
+| umai2     | good      | 50    | max   | 2560        | 2560      |          |
+| umai2     | cut       | 10    | max   | 2560        | 2560      |          |
+| umai2     | hole      | 10    | max   | 2560        | 2560      |          |
+| umai2     | glue      | 10    | max   | 2560        | 2560      |          |
+| umai2     | different | 10    | max   | 2560        | 2560      |          |
+| umai2     | color     | 10    | max   | 2560        | 2560      |          |
+| gum       | good      | 50    | max   | 2560        | 2560      |          |
+| gum       | cut       | 10    | max   | 2560        | 2560      |          |
+| gum       | hole      | 10    | max   | 2560        | 2560      |          |
+| gum       | clack     | 10    | max   | 2560        | 2560      |          |
+| gum       | thread    | 10    | max   | 2560        | 2560      |          |
+| gum       | liquid    | 10    | max   | 2560        | 2560      |          |
+| caramel   | good      | 50    | max   | 2560        | 2560      |          |
+| caramel   | cut       | 10    | max   | 2560        | 2560      |          |
+| caramel   | hole      | 10    | max   | 2560        | 2560      |          |
+| caramel   | bent      | 10    | max   | 2560        | 2560      |          |
+| caramel   | thread    | 10    | max   | 2560        | 2560      |          |
+| caramel   | liquid    | 10    | max   | 2560        | 2560      |          |
 
 
 | component    | function            | sample | light   | crop_height | crop_width | complete |
