@@ -37,18 +37,16 @@
 | kabayaki2 | hole      | 10    | max   | 3072        | 1536       | x        |
 | kabayaki2 | glue      | 10    | max   | 3072        | 1536       | x        |
 | kabayaki2 | color     | 10    | max   | 3072        | 1536       | x        |
-| karpas1   | good      | 50    | max   | 2560        | 2560       |          |
-| karpas1   | cut       | 10    | max   | 2560        | 2560       |          |
-| karpas1   | hole      | 10    | max   | 2560        | 2560       |          |
-| karpas1   | glue      | 10    | max   | 2560        | 2560       |          |
-| karpas1   | thread    | 10    | max   | 2560        | 2560       |          |
-| karpas1   | color     | 10    | max   | 2560        | 2560       |          |
-| karpas2   | good      | 50    | max   | 2560        | 2560       |          |
-| karpas2   | cut       | 10    | max   | 2560        | 2560       |          |
-| karpas2   | hole      | 10    | max   | 2560        | 2560       |          |
-| karpas2   | glue      | 10    | max   | 2560        | 2560       |          |
-| karpas2   | thread    | 10    | max   | 2560        | 2560       |          |
-| karpas2   | color     | 10    | max   | 2560        | 2560       |          |
+| karpas1   | good      | 50    | max   | 1024        | 2816       | x        | 9
+| karpas1   | cut       | 10    | max   | 1024        | 2816       | x        |
+| karpas1   | hole      | 10    | max   | 1024        | 2816       | x        |
+| karpas1   | thread    | 10    | max   | 1024        | 2816       | x        |
+| karpas1   | color     | 10    | max   | 1024        | 2816       | x        |
+| karpas2   | good      | 50    | max   | 1024        | 2816       | x        | 10
+| karpas2   | cut       | 10    | max   | 1024        | 2816       | x        |
+| karpas2   | hole      | 10    | max   | 1024        | 2816       | x        |
+| karpas2   | thread    | 10    | max   | 1024        | 2816       | x        |
+| karpas2   | color     | 10    | max   | 1024        | 2816       | x        |
 | umai1     | good      | 50    | max   | 2560        | 2560       |          |
 | umai1     | cut       | 10    | max   | 2560        | 2560       |          |
 | umai1     | hole      | 10    | max   | 2560        | 2560       |          |
