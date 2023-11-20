@@ -23,6 +23,7 @@ for category_path in "${category_path_list[@]}"; do
                --entrypoint python3 \
                -v $(pwd):/opt/project \
                -w /opt/project \
+               -v /tmp/pretrain_output/:/tmp/pretrain_output \
                -v /tmp/output/${category}/model:/tmp/output/${category}/model \
                -v ${category_path}/train/good:/tmp/dataset/${category}/train/good \
                -it vaik-patchcore-demo-image \
@@ -35,7 +36,8 @@ for category_path in "${category_path_list[@]}"; do
                --percentage $7 \
                --number_of_starting_points $8 \
                --dimension_to_project_features_to $9 \
-               --output_model_dir_path /tmp/output/${category}/model
+               --output_model_dir_path /tmp/output/${category}/model \
+               --pretrain_model_path /tmp/pretrain_output/latest.pth
 
     # inference
     docker run --name vaik-patchcore-demo-container \
@@ -44,6 +46,7 @@ for category_path in "${category_path_list[@]}"; do
                --entrypoint python3 \
                -v $(pwd):/opt/project \
                -w /opt/project \
+               -v /tmp/pretrain_output/:/tmp/pretrain_output \
                -v /tmp/output/${category}/model:/tmp/output/${category}/model \
                -v /tmp/output/${category}/dataset_inf:/tmp/output/${category}/dataset_inf \
                -v ${category_path}/test:/tmp/dataset/${category}/test \
@@ -52,7 +55,8 @@ for category_path in "${category_path_list[@]}"; do
                --input_faiss_path /tmp/output/${category}/model/model.faiss \
                --input_json_path /tmp/output/${category}/model/model.json \
                --test_image_dir_path /tmp/dataset/${category}/test \
-               --output_dir_path /tmp/output/${category}/dataset_inf
+               --output_dir_path /tmp/output/${category}/dataset_inf \
+               --pretrain_model_path /tmp/pretrain_output/latest.pth
 
     # experiment
     mkdir -p $2

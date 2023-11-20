@@ -80,8 +80,8 @@ def profile(log_path, input_dataset_dir_path, output_dir_path, delimiter='---'):
     sub_output_dir_path = os.path.join(output_dir_path, category, 'mean_score')
     dump(detail_by_mean_score_df, detail_heatmap_dict, input_dataset_dir_path, sub_output_dir_path)
 
-    sub_output_dir_path = os.path.join(output_dir_path, category, 'max_score')
-    dump(detail_by_max_score_df, detail_heatmap_dict, input_dataset_dir_path, sub_output_dir_path)
+    #sub_output_dir_path = os.path.join(output_dir_path, category, 'max_score')
+    #dump(detail_by_max_score_df, detail_heatmap_dict, input_dataset_dir_path, sub_output_dir_path)
 def main(input_log_dir_path, input_dataset_dir_path, output_dir_path):
     log_path_list = sorted(glob.glob(os.path.join(input_log_dir_path, '*.log')))
     for log_path in tqdm(log_path_list):
@@ -89,9 +89,9 @@ def main(input_log_dir_path, input_dataset_dir_path, output_dir_path):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='main')
-    parser.add_argument('--input_log_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly.v.0.0.3_experiment_log')
-    parser.add_argument('--input_dataset_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly.v.0.0.3')
-    parser.add_argument('--output_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly.v.0.0.3_experiment_log_profile')
+    parser.add_argument('--input_log_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly_snack.v.0.0.1_experiment_log')
+    parser.add_argument('--input_dataset_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly_snack.v.0.0.1')
+    parser.add_argument('--output_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly_snack.v.0.0.1_experiment_log_profile')
 
     args = parser.parse_args()
 
