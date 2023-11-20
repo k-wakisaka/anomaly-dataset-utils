@@ -17,7 +17,7 @@ category_path_list=($(find "$1" -maxdepth 1 -mindepth 1 -type d))
 for category_path in "${category_path_list[@]}"; do
     category=$(basename "${category_path}")
     # train
-    docker run --name vaik-patchcore-demo-container \
+    docker run --name vaik-patchcore-demo-container-ex \
                --rm \
                --gpus all \
                --entrypoint python3 \
@@ -40,7 +40,7 @@ for category_path in "${category_path_list[@]}"; do
                --pretrain_model_path /tmp/pretrain_output/latest.pth
 
     # inference
-    docker run --name vaik-patchcore-demo-container \
+    docker run --name vaik-patchcore-demo-container-ex \
                --rm \
                --gpus all \
                --entrypoint python3 \
@@ -60,7 +60,7 @@ for category_path in "${category_path_list[@]}"; do
 
     # experiment
     mkdir -p $2
-    docker run --name vaik-patchcore-demo-container \
+    docker run --name vaik-patchcore-demo-container-ex \
                --rm \
                --gpus all \
                --entrypoint python3 \
