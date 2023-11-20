@@ -6,6 +6,7 @@ import pandas as pd
 from PIL import Image
 import numpy as np
 import json
+from tqdm import tqdm
 import matplotlib.pyplot as plt
 import seaborn as sns
 import shutil
@@ -83,14 +84,14 @@ def profile(log_path, input_dataset_dir_path, output_dir_path, delimiter='---'):
     dump(detail_by_max_score_df, detail_heatmap_dict, input_dataset_dir_path, sub_output_dir_path)
 def main(input_log_dir_path, input_dataset_dir_path, output_dir_path):
     log_path_list = sorted(glob.glob(os.path.join(input_log_dir_path, '*.log')))
-    for log_path in log_path_list:
+    for log_path in tqdm(log_path_list):
         profile(log_path, input_dataset_dir_path, output_dir_path)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='main')
-    parser.add_argument('--input_log_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.3_experiment_log')
-    parser.add_argument('--input_dataset_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.3')
-    parser.add_argument('--output_dir_path', type=str, default='~/Desktop/anomaly.v.0.0.3_experiment_profile')
+    parser.add_argument('--input_log_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly.v.0.0.3_experiment_log')
+    parser.add_argument('--input_dataset_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly.v.0.0.3')
+    parser.add_argument('--output_dir_path', type=str, default='/home/kentaro/Desktop/ws/experiment/anomaly.v.0.0.3_experiment_log_profile')
 
     args = parser.parse_args()
 
