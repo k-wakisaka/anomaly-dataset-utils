@@ -162,8 +162,7 @@
 ```shell
 # ./experiment.sh {dataset_path} {output_dir_path} {input_image_height} {input_image_width} {preprocessing_dim} {aggregate_dims} {percentage} {number_of_starting_points} {dimension_to_project_features_to}
 cd scripts
-./experiment.sh ${HOME}/Desktop/ws/experiment/anomaly.v.0.0.3 ${HOME}/Desktop/ws/experiment/anomaly.v.0.0.3_experiment_log 288 288 1024 1024 0.1 10 128
-./experiment.sh ${HOME}/Desktop/ws/experiment/anomaly_snack.v.0.0.1 ${HOME}/Desktop/ws/experiment/anomaly_snack.v.0.0.1_experiment_log 288 288 1024 1024 0.1 10 128
+./experiment.sh ${HOME}/Desktop/ws/experiment/anomaly_experiment.v.1 ${HOME}/Desktop/ws/experiment/anomaly_experiment.v.1_log 288 288 1024 1024 0.1 10 128
 ```
 
 - run profile.py
